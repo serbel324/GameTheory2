@@ -36,7 +36,7 @@ def init_workers(path_to_executable, number):
 
 
 if __name__ == "__main__":
-    workers, input_fds, output_files = init_workers("echo.py", 1)
+    workers, input_fds, output_files = init_workers("echo.py", 2)
 
     for p in workers:
         p.start()            
